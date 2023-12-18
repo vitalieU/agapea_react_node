@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .rating {
+    display: flex;
+  }
+
+  .rating input {
+    display: none;
+  }
+  
+  .star {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: url('../../../../public/images/star-empty.png');
+    background-size: cover;
+    transition: background 0.3s ease;
+  }
+  
+  .star:hover,
+  .star:hover ~ .star,
+  input:checked ~ .star {
+    background: url('../../../../public/images/star-filled.jpg');
+    background-size: cover;
+  }
+  
